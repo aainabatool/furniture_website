@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #DCDCDC;
+    padding: 25px;
+}
+
+.container form {
+    width: 700px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flexbox;
+}
+
+form .row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 7px 10px;
+    border: 0.5px solid #DCDCDC;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.input-box img {
+    height: 30px;
+    margin-top: 6px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+form .btn {
+    font-weight: 600;
+    width: 615px;
+    padding: 20px;
+    background: #DCDCDC;
+    border: none;
+    outline: 2px;
+    border-radius: 100px;
+    font-size: 20px;
+    color: #333333;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+form .btn:hover {
+    background: #a6a6a6;
+}
+
+@media (max-width: 768px) {
+    .container form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
